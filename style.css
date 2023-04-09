@@ -20,6 +20,21 @@
     height: 113px;
     mix-blend-mode: darken;
 }
+.search {
+    float: right;
+}
+.searchField {
+    border: none;
+    border-bottom: 1px solid #324950;
+    background: transparent;
+
+    color: #324950;
+    float: right;
+}
+.searchField::placeholder {
+    font-family: Roboto Slab;
+    color: #324950;
+}
 .searchIcon {
     float: right;
 
@@ -31,6 +46,10 @@
     left: 628px;
     top: 91px;
     width: 527px;
+}
+.navigation_link {
+    font-family: Heebo;
+    color: #324950;
 }
 .banner {
     position: absolute;
@@ -97,6 +116,10 @@ h1 {
     top: 45px;
     bottom: 42px;
 }
+.products_links {
+    font-family: Roboto Slab;
+    color: #324950;
+}
 .Vision_Mission {
     padding-left: 405px;
     padding-right: 405px;
@@ -113,6 +136,12 @@ h1 {
     top: 107px;
 
     position: relative;
+}
+.h2Vision_Mission {
+    position: relative;
+
+    font-weight: bold;
+    text-align: left;
 }
 .stars {
     position: relative;
@@ -148,6 +177,9 @@ h1 {
     width: 90px;
     height: 90px;
 }
+.main_activ {
+    background: #EDEDED;
+}
 .open_field_crop_seeds_img {
     margin-top: 39px;
     width: 354px;
@@ -172,9 +204,15 @@ h1 {
     text-align: center;
     color: #324950;
 }
+.h3Main_activ {
+    color: #57984C;
+}
 .open_field_crop_seeds_text {
     position: relative;
     top: -56px;
+}
+.vegetable_seeds_text {
+    position: relative;
 }
 .ornamental_seeds_text {
     position: relative;
@@ -225,7 +263,7 @@ h1 {
     margin: 17px 0 0;
 }
 }
-@media screen{
+@media screen and (max-width: 1366px){
 .header{
     position: absolute;
     width: 802px; /*1127*/

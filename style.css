@@ -7,12 +7,16 @@
     src: url(Fonts/RobotoSlab-Regular.ttf);
 }
 @media screen and (max-width: 1920px){
+
+    /* Homepage */
+
 .header{
     position: absolute;
     width: 1127px;
     height: 113px;
     left: 388px;
     top: 20px;
+    margin-bottom: 22px;
 }
 .logo{
     position: absolute;
@@ -37,13 +41,15 @@
 }
 .searchIcon {
     float: right;
-
     position: relative;
-    left: -25px;
+    left: -24px;
+
+    border: 0;
+    background: transparent;
 }
 .navigation {
     position: absolute;
-    left: 743px; /*447*/
+    left: 743px; /*743 447*/
     top: 91px;
     width: 527px;
 }
@@ -140,8 +146,16 @@ h1 {
 .h2Vision_Mission {
     position: relative;
 
+    font-size: 54px;
     font-weight: bold;
     text-align: left;
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.Vision_Mission_text {
+    font-size: 17px;
+    font-family: Roboto Slab;
+    color: #324950;
 }
 .stars {
     position: relative;
@@ -206,6 +220,8 @@ h1 {
 }
 .h3Main_activ {
     color: #57984C;
+    font-family: Roboto Slab bold;
+    font-size: 24px; /*16 for list*/
 }
 .open_field_crop_seeds_text {
     position: relative;
@@ -236,6 +252,8 @@ h1 {
     text-align: center;
     height: 127px;
     font-size: 16px;
+
+    position: relative;
 }
 .links {
     color: #FFFFFF;
@@ -262,271 +280,347 @@ h1 {
     position: relative;
     margin: 17px 0 0;
 }
+
+    /* Category */
+
+.banner_cat {
+    width: 1920px;
+    height: 480px;
+
+    position: absolute;
+    top: 122px;
+    z-index: 1;
+}
+.content_cat {
+    position: absolute;
+    top: 582px;
+    padding: 0 385px 1968px;
+    width: 100%;
+
+    background: #FCF0F0;
+}
+.content_text {
+    position: relative;
+    left: 20px;
+}
+.program_focus {
+    position: absolute;
+    top: 514px;
+    left: 30px;
+    height: content;
+
+    background-image: url(Images/red_line.svg);
+    background-repeat: no-repeat;
+    background-size: 4px;
+    padding-left: 22px;
+    margin-left: -22px;
+}
+.segments {
+    position: absolute;
+    top: 602px;
+    width: 1152px;
+    height: 450px;
+
+    background: #FFFAFA;
+}
+.h3segments {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Roboto Slab;
+    color: #324950;
+
+    background-image: url(Images/gray_line.svg);
+    background-repeat: no-repeat;
+    background-position-y: 70px; /*70? 48*/
+    padding-bottom: 70px;
+    margin-bottom: -70px;
+}
+.segments_text {
+    font-size: 17px;
+    font-family: Roboto Slab;
+    color: #324950;
+    margin-top: 30px;
+    text-align: left;
+}
+.program_focus2 {
+    position: absolute;
+    top: 1138px; /*1034+104? 736+104*/
+    left: 435px;
+    height: content;
+
+    background-image: url(Images/red_line.svg);
+    background-repeat: no-repeat;
+    background-size: 3px;
+    padding-left: 22px;
+    margin-left: -22px;
+    margin-bottom: 20px;
+}
+.list {
+    position: absolute;
+    top: 1071px;
+    left: 405px;
+}
+.particular_tomato {
+    margin-top: 30px;
+    width: 350px;
+    height: 321px;
+}
+.particular_tomato_image {
+    overflow:hidden;
+    height: 77%;
+}
+.particular_tomato_image img {
+    width: 100%;
+}
+.particular_tomato_text {
+    color: #57984C;
+    font-family: Roboto Slab;
+    font-size: 16px;
+    background-color: #fff;
+
+    padding: 9px;
+}
+.footer_cat {
+    position: relative;
+    top: 2935px;
+}
 }
 @media screen and (max-width: 1366px){
+
+    /* Homepage */
+
 .header{
-    position: absolute;
-    width: 802px; /*1127*/
-    height: 83px; /*113*/
-    left: 276px; /*388*/
-    top: 14px; /*20*/
+    width: 802px;
+    height: 83px;
+    left: 276px;
+    top: 14px;
+    margin-bottom: 16px;
 }
 .logo{
-    position: absolute;
-    width: 161px; /*226*/
-    height: 80px; /*113*/
-    
-    /* background: url(Images/Logo.png); */
-    /* background-size: cover; */
-    mix-blend-mode: darken;
-}
-.search {
-    float: right;
-}
-.searchField {
-    border: none;
-    border-bottom: 1px solid #324950;
-    background: transparent;
-
-    color: #324950;
-    float: right;
-}
-.searchField::placeholder {
-    font-family: Roboto Slab;
-    color: #324950;
+    width: 161px;
+    height: 80px;
 }
 .searchIcon {
-    float: right;
-
-    position: relative;
-    left: -18px;
+    left: -24px;
 }
 .navigation {
-    position: absolute;
-    left: 447px; /*628 447*/
-    top: 65px; /*91*/
-    width: 375px; /*499 527 375*/
-}
-.navigation_link {
-    font-family: Heebo;
-    color: #324950;
+    left: 397px;
+    top: 65px;
+    width: 375px;
 }
 .banner {
-    position: absolute;
-    width: 1351px; /*1920*/
-    height: 605px; /*850*/
-    left: 0px;
-    top: 0px;
-    background-image: url(Images/bg.png);
-    background-size: cover;
+    width: 1351px;
+    height: 605px;
 }
 .bannerCenter {
-    position: absolute;
-    width: 572px; /*804*/
-    height: 130px; /*183*/
-    left: 397px; /*558*/
-    top: 258px; /*362*/
+    width: 572px;
+    height: 130px;
+    left: 397px;
+    top: 258px;
 }
 h1 {
-    position: relative;
-    /* top: 258px; 362 */
-
-    font-size: 34px; /*48*/
-    color: #735440;
-    font: Roboto Slab;
-    font-weight: bold;
-    text-align: center;
+    font-size: 34px;
 }
 .bannerButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 11px 22px; /*16 31*/
-    gap: 10px;
-    border: 0;
+    padding: 11px 22px;
 
-    position: relative;
-    width: 121px; /*160*/
-    height: 38px; /*55*/
-    line-height: 32px; /*45*/
-    left: 229px; /*a880 626 r322*/
-    top: 43px; /*a490 349 r60*/
-
-    background: #57984C;
+    width: 121px;
+    height: 38px;
+    line-height: 32px;
+    left: 229px;
+    top: 43px;
 }
 .bannerButtonText {
-    width: 77px; /*98*/
-    height: 16px; /*23*/
-    font-family: Roboto;
-    font-size: 13px; /*16*/
-
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    width: 77px;
+    height: 16px;
+    font-size: 13px;
 }
 .products {
-    margin-top: 605px; /*850*/
-    height: 164px; /*190+41 135+29*/
-    width: 355; /*499*/
-    background: #FFFFFF; /*#EFEDEB*/
+    margin-top: 605px;
+    height: 164px;
+    width: 355;
 }
 .col {
-    font-size: 14px; /*20*/
-    text-align: center;
+    font-size: 14px;
 
-    top: 32px; /*45*/
-    bottom: 30px; /*42*/
-}
-.products_links {
-    font-family: Roboto Slab;
-    color: #324950;
+    top: 32px;
+    bottom: 30px;
 }
 .Vision_Mission {
-    padding-left: 288px; /*405*/
-    padding-right: 288px; /*405*/
-    padding-bottom: 71px; /*100*/
+    padding-left: 288px;
+    padding-right: 288px;
+    padding-bottom: 71px;
 
-    background-color: #F8F4F4; /*#E5E5E5 EFEDEB */
-    background-position-y: center;
-    background-image: url(Images/bg_plant.svg);
-    background-size: cover;
-    height: 781px; /*1098*/
+    height: 781px;
 }
 .main_text {
-    text-align: left;
-    top: 76px; /*107*/
-
-    position: relative;
-    /* left: 288px; 405 */
+    top: 76px;
 }
 .h2Vision_Mission {
-    position: relative;
-
-    font-weight: bold;
-    text-align: left;
+    font-size: 38px;
+}
+.Vision_Mission_text {
+    font-size: 12px;
 }
 .stars {
-    position: relative;
-    top: 18px; /*25*/
-
-    font-weight: bold;
-    text-align: left;
-    color: #57984C;
+    top: 18px;
 }
 .Vision_Img {
-    width: 384px; /*540*/
-    height: 356px; /*500*/
+    width: 384px;
+    height: 356px;
 }
 .Mission_Img {
-    width: 384px; /*540*/
-    height: 356px; /*500*/
-    position: relative;
+    width: 384px;
+    height: 356px;
 }
 .Mission_play {
-    border: none;
-    width: 64px; /*90*/
-    height: 64px; /*90*/
-    background: 0;
-
-    /* float: right; */
-    position: absolute;
-    left: -30px;
+    width: 64px;
+    height: 64px;
     /* position: relative;
     left: 448px; a630 448 r
     top: 1362px; a1914 1362 r */
 }
 .btn_play {
-    position: absolute;
-    top: 180px; /*o205 146 a253*/
-    left: 200px; /*o225 160 a280*/
-    transform: translate(-50%,-50%);
-    width: 90px; /*90*/
-    height: 90px; /*90*/
-}
-.main_activ {
-    background: #EDEDED;
+    top: 180px;
+    left: 200px;
+    width: 90px;
+    height: 90px;
 }
 .open_field_crop_seeds_img {
-    margin-top: 28px; /*39*/
-    width: 252px; /*354*/
-    height: 187px; /*261*/
+    margin-top: 28px;
+    width: 252px;
+    height: 187px;
 }
 .vegetable_seeds_img {
-    margin-top: 10px; /*14*/
-    width: 165px; /*232*/
-    height: 165px; /*232*/
+    margin-top: 10px;
+    width: 165px;
+    height: 165px;
 }
 .ornamental_seeds_img {
-    margin-top: 41px; /*58*/
-    width: 210px; /*295*/
-    height: 152px; /*213*/
+    margin-top: 41px;
+    width: 210px;
+    height: 152px;
 }
 .h2Main_activ {
-    position: relative;
-    padding-top: 50px; /*70*/
-
-    font-family: Roboto Slab;
-    font-weight: bold;
-    text-align: center;
-    color: #324950;
+    padding-top: 50px;
 }
 .h3Main_activ {
-    color: #57984C;
+    font-size: 17px; /*11 for list*/
 }
 .open_field_crop_seeds_text {
-    position: relative;
-    top: -40px; /*56*/
-}
-.vegetable_seeds_text {
-    position: relative;
+    top: -40px;
 }
 .ornamental_seeds_text {
-    position: relative;
-    top: -18px; /*25*/
+    top: -18px;
 }
 .open_field_crop_seeds {
-    position: relative;
-    top: -90px; /*127*/
+    top: -90px;
 }
 .vegetable_seeds {
-    position: relative;
-    top: -90px; /*127*/
+    top: -90px;
 }
 .ornamental_seeds {
-    position: relative;
-    top: -90px; /*127*/
+    top: -90px;
 }
 .footer {
-    color: #B9B9B9;
-    background: #324950;
-    text-align: center;
-    height: 90px; /*127*/
-    font-size: 11px; /*16*/
+    height: 90px;
+    font-size: 11px;
 }
 .links {
-    color: #FFFFFF;
-    
-    background: #2D3F45;
-    height: 54px; /*76*/
-    line-height: 54px; /*76*/
-    padding: 0 288px 0; /*405*/
+    height: 54px;
+    line-height: 54px;
+    padding: 0 288px 0;
 }
 .footer_link {
-    color: #FFFFFF;
-    position: relative;
-    margin: 9.8px; /*13.8*/
-    left: 0;
-    /* left: 288px; 405 170 */
+    margin: 9.8px;
 }
 .footer_link_icon {
-    position: relative;
-    margin-left: 9.8px; /*13.8*/
-    left: 100px; /*174 100*/
-    height: 22px; /*31*/
-    width: 22px; /*31*/
+    margin-left: 9.8px;
+    left: 100px;
+    height: 22px;
+    width: 22px;
 }
 .copyrights {
+    margin: 15px 0 0;
+}
+
+    /* Category */
+
+.banner_cat {
+    width: 1351px;
+    height: 342px;
+}
+.content_cat {
+    top: 414px;
+    padding: 0 274px 1400px;
+}
+.content_text {
+    left: 14px;
+}
+.program_focus {
+    top: 414px;
+    left: 21px;
+
+    background-size: 3px;
+    padding-left: 22px;
+    margin-left: -22px;
+}
+.segments {
+    top: 481px;
+    width: 820px;
+    height: 320px;
+}
+.h3segments {
+    font-size: 14px;
+
+    background-position-y: 48px;
+    padding-bottom: 48px;
+    margin-bottom: -48px;
+}
+.segments_text {
+    font-size: 12px;
+    margin-top: 30px;
+}
+.program_focus2 {
+    top: 840px;
+    left: 309px;
+
+    background-size: 2px;
+    padding-left: 22px;
+    margin-left: -22px;
+    margin-bottom: 20px;
+}
+.list {
+    top: 833px;
+    left: 272px;
+}
+.particular_tomato {
+    margin-top: 30px;
+    width: 249px;
+    height: 228px;
+}
+.particular_tomato_text {
+    font-size: 11px;
+
+    padding: 9px;
+}
+.footer_cat {
+    top: 2088px;
+}
+
+    /* Tomato details */
+
+.main_det {
     position: relative;
-    margin: 15px 0 0; /*17*/
+    top: 114px; /*140+19 100+14*/
+    padding: 14px 320px 0; /*450*/
+
+    height: fit-content;
+    background-color: #E5E5E5;
+}
+.content_det {
+    position: relative;
+    top: 43px; /*60*/
 }
 }

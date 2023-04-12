@@ -288,7 +288,7 @@ h1 {
     height: 480px;
 
     position: absolute;
-    top: 122px;
+    top: 171px;
     z-index: 1;
 }
 .content_cat {
@@ -305,15 +305,15 @@ h1 {
 }
 .program_focus {
     position: absolute;
-    top: 514px;
+    top: 582px;
     left: 30px;
     height: content;
 
     background-image: url(Images/red_line.svg);
     background-repeat: no-repeat;
     background-size: 4px;
-    padding-left: 22px;
-    margin-left: -22px;
+    padding-left: 31px; /*22*/
+    margin-left: -31px; /*22*/
 }
 .segments {
     position: absolute;
@@ -550,6 +550,8 @@ h1 {
 .banner_cat {
     width: 1351px;
     height: 342px;
+    
+    top: 122px;
 }
 .content_cat {
     top: 414px;

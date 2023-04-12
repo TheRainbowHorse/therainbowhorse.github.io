@@ -305,7 +305,7 @@ h1 {
 }
 .program_focus {
     position: absolute;
-    top: 582px;
+    top: 562px;
     left: 30px;
     height: content;
 
@@ -317,7 +317,7 @@ h1 {
 }
 .segments {
     position: absolute;
-    top: 602px;
+    top: 652px;
     width: 1152px;
     height: 450px;
 
@@ -345,7 +345,7 @@ h1 {
 }
 .program_focus2 {
     position: absolute;
-    top: 1138px; /*1034+104? 736+104*/
+    top: 1181px; /*1034+104? 736+104*/
     left: 435px;
     height: content;
 
@@ -358,7 +358,7 @@ h1 {
 }
 .list {
     position: absolute;
-    top: 1071px;
+    top: 1121px;
     left: 405px;
 }
 .particular_tomato {

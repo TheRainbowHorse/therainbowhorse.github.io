@@ -83,7 +83,7 @@
     margin-top: 358px;
 }
 .products {
-    margin-top: 290px;
+    margin-top: 340px;
 }
 .Vision_Mission{
     height: 648px;
@@ -139,7 +139,8 @@
     left: -11%;
 }
 .products {
-    margin-top: 340px;
+    margin-top: 360px;
+    padding-bottom: 38%;
 }
 .Vision_Mission {
     padding: 20px 5%;
@@ -189,9 +190,18 @@ td img {
 .search {
     left: 0;
 }
+.searchField {
+    width: 230px;
+}
 .products {
-    margin-top: 360px;
-    padding-bottom: 38%;
+    margin-top: 390px;
+    /* padding-bottom: 190%; */
+}
+.products .col-sm {
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 .list .col-sm-4 {
     flex: 0 0 50%;
@@ -232,25 +242,10 @@ td img {
 .menu img {
     width: 40px;
 }
-.search {
-    top: 55px;
-    left: 11%;
-}
 .products {
-    margin-top: 390px;
-    /* padding-bottom: 190%; */
-}
-.products img {
-    /* height: 80%; */
-}
-.products .col-sm {
-    width: 25%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-.products .Vision_Mission_text {
-    /* font-size: 16px; */
+    margin-top: 400px;
+    padding-bottom: 160px;
+
 }
 .Vision_Mission {
     margin-top: 80px;
@@ -281,10 +276,6 @@ td img {
 
 .search {
     top: 30px;
-    margin-right: 50px;
-}
-.searchField {
-    width: 230px;
 }
 .banner_cat {
     height: auto;
@@ -318,7 +309,7 @@ td img {
     /* Homepage */
 
 .products {
-    margin-top: 400px;
+    margin-top: 420px;
 }
 .Vision_Mission {
     margin-top: 90px;
@@ -327,8 +318,12 @@ td img {
     /* Category */
 
 .search {
+    left: 0;
     top: 30px;
     margin-right: 3px;
+}
+.searchField {
+    width: 180px;
 }
 .program_focus {
     background-size: 7.4px;
@@ -359,10 +354,6 @@ td img {
 .bannerCenter {
     margin-top: 328px;
 }
-.products {
-    margin-top: 420px;
-    padding-bottom: 160px;
-}
 .products .col-sm {
     width: 33%;
 }
@@ -374,9 +365,6 @@ td img {
 
 .search {
     margin-right: 7px;
-}
-.searchField {
-    width: 180px;
 }
 .segments {
     height: 850px;

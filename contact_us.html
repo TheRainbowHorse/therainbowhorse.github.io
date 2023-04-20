@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+    <title>Agridera</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="general">
+        <div class="header">
+            <a href="index.html" class="navigation_link"><img class="logo" src="Images/Logo.png"></a>
+            <div class="navigation">
+                <a href="index.html" class="navigation_link">Home</a>  <a href="" class="navigation_link">Company</a>  <a href="" class="navigation_link">Profile</a>  <a href="category.html" class="navigation_link">Products</a>  <a href="" class="navigation_link">Services</a>  <a href="" class="navigation_link">R & D</a>  <a href="contact_us.html" class="navigation_link">Contact</a>
+            </div>
+            <button class="menu" @click="openMenu()"><img src="Images/menu.png"></button>
+            <div class="search">
+                <input class="searchField" placeholder="Search">
+                <button class="searchIcon"><img src="Images/ico_search.svg"></button>
+            </div>
+        </div>
+        <div class="inform" v-if="menu==1">
+            <button class="menu" @click="openMenu()"><img src="Images/menu_close.png"></button>
+            <div class="inform_link">
+                <li><a style="font: 24px Heebo; color:white;" href="index.html">Home</a></li>
+                <li><a style="font: 24px Heebo; color:white;" href="#">Company Profile</a></li>
+                <li><a style="font: 24px Heebo; color:white;" href="category.html">Products</a></li>
+                <li><a style="font: 24px Heebo; color:white;" href="#">Services</a></li>
+                <li><a style="font: 24px Heebo; color:white;" href="#">R&amp;D</a></li>
+                <li><a style="font: 24px Heebo; color:white;" href="contact_us.html">Contact</a></li>    
+            </div>
+        </div>
+        <div class="banner_con">
+            <img src="Images/bg_contact.png" style="max-width: 100%;">
+        </div>
+        <div class="content_con">
+            <h2 class="h2Vision_Mission">Contact us</h2>
+            <p class="stars">******</p><br>
+            <table v-if="cart!=''">
+                <tr>
+                    <th></th>
+                    <th>Product name</th>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+                <tr v-for="c in cart">
+                    <td><img :src="'Images/'+c.image"></th>
+                    <td>{{c.title}}</td>
+                    <td>{{c.short_text}}</td>
+                    <td><button style="border: 0; background: transparent;" @click="removeFromCart(c.id)"><img style="width: 20px" src="Images/menu_close.png"></button></td>
+                </tr>
+            </table>
+            <form class="form" action="contact_us.html" method="post" @submit.prevent="makeOrder()" v-if="order==0">
+                <fieldset class="left_col">
+                    <p>Name *<br><input name="login" required v-model="contactFields.clientName"></p>
+                    <p>Company Name<br><input name="company_name" v-model="contactFields.companyName"></p>
+                    <p>Position<br><input name="position" v-model="contactFields.position"></p>
+                    <p>City<br><input name="city" v-model="contactFields.city"></p>
+                    <p>Country<br><input name="country" v-model="contactFields.country"></p>
+                    <p>Telephone<br><input name="tel" v-model="contactFields.telephone"></p>
+                    <p>Email *<br><input type="email" name="email" required v-model="contactFields.email"></p>
+                </fieldset>
+                <fieldset class="right_col">
+                    <p>
+                        You are a<br>
+                        <select name="you_are_sel" class="you_are" v-model="contactFields.youAre">
+                            <option selected value="seed producer">seed producer</option>
+                            <option value="buyer">buyer</option>
+                            <option value="other">other</option>
+                        </select>
+                    </p>
+                    <p>If other, please specify<br><input class="you_are" name="you_are_other" v-model="contactFields.other"></p>
+                    <p>You are interested in<br><textarea class="form_textarea" v-model="contactFields.interested"></textarea></p>
+                    <p>
+                        Please type this code
+                        <br><img src="Images/capcha.png"><input class="capcha" name="capcha">
+                        <input class="btn_submit" type="submit" value="Send Message">
+                    </p>
+                </fieldset>
+            </form>
+            <div v-if="order==1">
+                Thank You!
+                <p>Name: {{contactFields.clientName}}</p>
+                <p v-if="contactFields.companyName">Company Name: {{contactFields.companyName}}</p>
+                <p v-if="contactFields.position">Position: {{contactFields.position}}</p>
+                <p v-if="contactFields.city">City: {{contactFields.city}}</p>
+                <p v-if="contactFields.country">Country: {{contactFields.country}}</p>
+                <p v-if="contactFields.telephone">Telephone: {{contactFields.telephone}}</p>
+                <p>Email: {{contactFields.email}}</p>
+                <p v-if="contactFields.youAre!='other' && contactFields.youAre">You are a {{contactFields.youAre}}</p>
+                <p v-if="contactFields.youAre=='other' && contactFields.other">You are a {{contactFields.other}}</p>
+                <p v-if="contactFields.interested">You are interested in {{contactFields.interested}}</p>
+            </div>
+        </div>
+        <div class="adress">
+            <div class="adress_text">
+                <h3 class="h3Main_activ">Our Adress</h3>
+                <img src="Images/green_line.svg"><br>
+                <p>AGRIDERA Seeds & Agriculture Ltd.<br>
+                P.O Box 103,<br>
+                Gedera 70750, Israel.<br>
+                Telephone: <a href="">+972 8 944 9222</a></p>
+            </div>
+        </div>
+            <div class="footer">
+            <div class="links">
+                <a href="" class="footer_link">PROFILE</a> <a href="" class="footer_link">MANAGEMENT</a> <a href="category.html" class="footer_link">PRODUCTS</a> <a href="" class="footer_link">R&D</a> <a href="" class="footer_link">LINKS</a> <a href="" class="footer_link">SITEMAP</a> <a href="contact_us.html" class="footer_link">CONTACT</a>
+                <div class="footer_icons">
+                    <a href="" class="footer_link_icon"><img src="Images/Ico_in.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_inst.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tube.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tw.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_fb.svg"></a>
+                </div>
+            </div>
+            <p class="copyrights">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

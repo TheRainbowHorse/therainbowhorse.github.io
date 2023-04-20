@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+    <title>Agridera</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="general">
+        <div class="header">
+            <a href="index.html" class="navigation_link"><img class="logo" src="Images/Logo.png"></a>
+            <div class="navigation">
+                <a href="index.html" class="navigation_link">Home</a>  <a href="" class="navigation_link">Company</a>  <a href="" class="navigation_link">Profile</a>  <a href="category.html" class="navigation_link">Products</a>  <a href="" class="navigation_link">Services</a>  <a href="" class="navigation_link">R & D</a>  <a href="contact_us.html" class="navigation_link">Contact</a>
+            </div>
+            <button class="menu" @click="openMenu()"><img src="Images/menu.png"></button>
+            <div class="search">
+                <input class="searchField" placeholder="Search">
+                <button class="searchIcon"><img src="Images/ico_search.svg"></button>
+            </div>
+            <div class="inform" v-if="menu==1">
+                <button class="menu" @click="openMenu()"><img src="Images/menu_close.png"></button>
+                <div class="inform_link">
+                    <li><a style="font: 24px Heebo; color:white;" href="index.html">Home</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="#">Company Profile</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="category.html">Products</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="#">Services</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="#">R&amp;D</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="contact_us.html">Contact</a></li>    
+                </div>
+            </div>
+        </div>
+        <div class="main_det">
+            <a class="return_det" href="category.html">Return to all pears</a>
+            <div class="content_det">
+                <div class="container">
+                    <div class="row">
+                        <div class="col" id="title_768">
+                            <div class="caption_det">
+                                <h2 class="h2Vision_Mission">{{product.title}}
+                                <p>{{product.short_text}}</p></h2> 
+                                <p class="stars">******</p><br>
+                            </div>
+                            <div class="quality_mark">
+                                <p class="quality_mark_text">Very high yield and 
+                                excellent fruits quality!</p>
+                            </div>
+                            <div class="characteristics">
+                                <h3 class="h3Main_activ">CHARACTERISTICS</h3>
+                                <img src="Images/green_line.svg"><br>
+                                <p class="Vision_Mission_text">{{product.characteristics}}</p>
+                            </div>
+                        </div>
+                        <div class="col" id="logo_768">
+                            <img class="img_det" :src="'Images/'+product.image">
+                            <button class="btn_download" @click="addToCart(product.id)" v-if="!btnVisible">
+                                Add to cart
+                            </button>
+                            <a href="contact_us.html" class="btn_download" v-if="btnVisible">
+                                Go to cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="characteristics">
+                                <h3 class="h3Main_activ">Ripening</h3>
+                                <img src="Images/green_line.svg"><br>
+                                <li style="text-align: left; color: #57984C" v-for="r in product.ripening"><span class="Vision_Mission_text">{{r}}</span></li>
+                            </div>
+                            <div class="characteristics">
+                                <h3 class="h3Main_activ">Fruit</h3>
+                                <img src="Images/green_line.svg"><br>
+                                <li style="text-align: left; color: #57984C" v-for="f in product.fruit"><span class="Vision_Mission_text">{{f}}</span></li>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="characteristics">
+                                <h3 class="h3Main_activ">Cycle</h3>
+                                <img src="Images/green_line.svg"><br>
+                                <li style="text-align: left; color: #57984C" v-for="c in product.cycle"><span class="Vision_Mission_text">{{c}}</span></li>
+                            </div>
+                            <div class="characteristics">
+                                <h3 class="h3Main_activ">Color</h3>
+                                <img src="Images/green_line.svg"><br>
+                                <p class="Vision_Mission_text">{{product.color}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <a href="" class="footer_link">PROFILE</a> <a href="" class="footer_link">MANAGEMENT</a> <a href="category.html" class="footer_link">PRODUCTS</a> <a href="" class="footer_link">R&D</a> <a href="" class="footer_link">LINKS</a> <a href="" class="footer_link">SITEMAP</a> <a href="contact_us.html" class="footer_link">CONTACT</a>
+                <div class="footer_icons">
+                    <a href="" class="footer_link_icon"><img src="Images/Ico_in.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_inst.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tube.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tw.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_fb.svg"></a>
+                </div>
+            </div>
+            <p class="copyrights">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

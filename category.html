@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+    <title>Agridera</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="general">
+        <div class="header">
+            <a href="index.html" class="navigation_link"><img class="logo" src="Images/Logo.png"></a>
+            <div class="navigation">
+                <a href="index.html" class="navigation_link">Home</a>  <a href="" class="navigation_link">Company</a>  <a href="" class="navigation_link">Profile</a>  <a href="category.html" class="navigation_link">Products</a>  <a href="" class="navigation_link">Services</a>  <a href="" class="navigation_link">R & D</a>  <a href="contact_us.html" class="navigation_link">Contact</a>
+            </div>
+            <button class="menu" @click="openMenu()"><img src="Images/menu.png"></button>
+            <div class="search">
+                <input class="searchField" placeholder="Search">
+                <button class="searchIcon"><img src="Images/ico_search.svg"></button>
+            </div>
+            <div class="inform" v-if="menu==1">
+                <button class="menu" @click="openMenu()"><img src="Images/menu_close.png"></button>
+                <div class="inform_link">
+                    <li><a style="font: 24px Heebo; color:white;" href="index.html">Home</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="#">Company Profile</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="category.html">Products</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="#">Services</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="#">R&amp;D</a></li>
+                    <li><a style="font: 24px Heebo; color:white;" href="contact_us.html">Contact</a></li>    
+                </div>
+            </div>
+        </div>
+        <div class="banner_cat">
+            <img src="Images/bg_category_pear.jpg">
+        </div>
+        <div class="content_cat">
+            <div class="content_text">
+                <div class="main_text_cat">
+                    <h2 class="h2Vision_Mission">Agridera Fresh Market Pear Hybrids</h2>
+                    <p class="stars">******</p><br>
+                    <p class="Vision_Mission_text">Agridera aims to be one of the world's leading companies in the breeding, production, and marketing of tomato seeds. <b>We invest 
+                    <br>intensively in research and development to provide solutions to growers and consumers in numerous countries around the world.</b>
+                    <br>In particular, we breed improved disease-resistant cultivars adapted to different markets globally.
+                    <br>
+                    <br>Currently, emphasis is placed on combining Tomato Yellow Leaf Curl Virus (TYLCV) and Tomato Spotted Wilt Virus (TSWV) resistances 
+                    <br>with other soil borne diseases into superior tomato breeding lines and hybrids. Moreover, comprehensive efforts are being undertaken to 
+                    <br>develop varieties resistance to TBRFV virus (Tomato Brown Rugose Fruit Virus). 
+                    <br>
+                    <br>In terms of horticultural traits, breeding is for earliness, different fruit sizes, firmness, red fruit color, flavor, crack resistance, shelf life, 
+                    <br>and high/low temperature fruit set. Combinations of quality features and disease resistance are sought in a variety of types, namely 
+                    <br>round and elongated shapes. </p>
+                </div>
+                <div class="program_focus">
+                    <p class="Vision_Mission_text">Agirdera Tomato breeding programs are focusing on three main segments: Greenhouse Indeterminate Tomatoes, Open-field 
+                        Indeterminate Tomatoes, and Bush Type Open-field Tomatoes.</p>
+                </div>
+            </div>
+            <div class="segments">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h3 class="h3segments">Greenhouse Tomato Breeding<br> Program</h3>
+                            <p class="segments_text">
+                                <b>This breeding is aimed for the Spanish and 
+                                Turkish markets.</b> For single and cluster 
+                                picks, round fruit shape and resistances of 
+                                TYLCV, TSWV, Nematodes and FORL 
+                                (Fusarium oxysporum f.sp. 
+                                radicis-lycopersici). Some hybrids may 
+                                include more resistances, such as 
+                                Cladosporium and Leveillula Taurica (Lv).
+                            </p>
+                        </div>
+                        <div class="col-sm">
+                            <h3 class="h3segments">Open-field Indeterminate<br> Tomatoes</h3>
+                            <p class="segments_text">
+                                <b>This breeding is for Brazilian, Moroccan, 
+                                and Turkish markets.</b> The main focus is on 
+                                large round shape fruits (200 grams plus); 
+                                and resistances of TYLCV, TSWV, 
+                                Nematodes and FORL. In the near future, F3 
+                                (Fusarium oxysporum f.sp. lycopersici) will 
+                                be included as basic resistance in our 
+                                cultivars.
+                            </p>
+                        </div>
+                        <div class="col-sm">
+                            <h3 class="h3segments">Open-field Bush Type<br> Tomatoes</h3>
+                            <p class="segments_text">
+                                <b>This breeding is for Mediterranean 
+                                markets.</b> We breed round and elongated 
+                                shapes, standard sizes (140- 180 grams), 
+                                and beef sizes (min. 180 grams up to 300 
+                                grams and more). We combine the 
+                                resistances of TYLCV, TSWV and 
+                                Nematodes as basic resistances in our 
+                                hybrids. However, some hybrids may 
+                                include more resistances, such as 
+                                Cladosporium and Leveillula Taurica (Lv).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="program_focus2">
+                <p class="Vision_Mission_text"><b>Agridera operates through international and local distributers around the world.</b></p>
+            </div>
+            <div class="list">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4" v-if="products" v-for="p in products">
+                            <div class="particular_tomato">
+                                <a :href="'tomato_details.html#'+p.id">
+                                    <div class="particular_tomato_image">
+                                        <img :src="'Images/'+p.image">
+                                    </div>
+                                    <p class="particular_tomato_text"><b class="particular_tomato_title">{{p.title}}</b>
+                                    <br>{{p.short_text}}</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <a href="" class="footer_link">PROFILE</a> <a href="" class="footer_link">MANAGEMENT</a> <a href="category.html" class="footer_link">PRODUCTS</a> <a href="" class="footer_link">R&D</a> <a href="" class="footer_link">LINKS</a> <a href="" class="footer_link">SITEMAP</a> <a href="contact_us.html" class="footer_link">CONTACT</a>
+                <div class="footer_icons">
+                    <a href="" class="footer_link_icon"><img src="Images/Ico_in.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_inst.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tube.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tw.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_fb.svg"></a>
+                </div>
+            </div>
+            <p class="copyrights">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Contect-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=320, initial-scale=1.0"/>
+        <title>Agridera</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="responsive.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <div class="general">
+            <div class="header">
+                <a href="index.html" class="navigation_link"><img class="logo" src="Images/Logo.png"></a>
+                <div class="navigation">
+                    <a href="index.html" class="navigation_link">Home</a>  <a href="" class="navigation_link">Company</a>  <a href="" class="navigation_link">Profile</a>  <a href="category.html" class="navigation_link">Products</a>  <a href="" class="navigation_link">Services</a>  <a href="" class="navigation_link">R & D</a>  <a href="contact_us.html" class="navigation_link">Contact</a>
+                </div>
+                <button class="menu" @click="openMenu()"><img src="Images/menu.png"></button>
+                <div class="search">
+                    <input class="searchField" placeholder="Search">
+                    <button class="searchIcon"><img src="Images/ico_search.svg"></button>
+                </div>
+                <div class="inform" v-if="menu==1">
+                    <button class="menu" @click="openMenu()"><img src="Images/menu_close.png"></button>
+                    <div class="inform_link">
+                        <li><a style="font: 24px Heebo; color:white;" href="index.html">Home</a></li>
+                        <li><a style="font: 24px Heebo; color:white;" href="#">Company Profile</a></li>
+                        <li><a style="font: 24px Heebo; color:white;" href="category.html">Products</a></li>
+                        <li><a style="font: 24px Heebo; color:white;" href="#">Services</a></li>
+                        <li><a style="font: 24px Heebo; color:white;" href="#">R&amp;D</a></li>
+                        <li><a style="font: 24px Heebo; color:white;" href="contact_us.html">Contact</a></li>    
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="bannerCenter">
+                    <h1>Agridera Seeds and Agriculture Ltd</h1>
+                    <button class="bannerButton"><p class="bannerButtonText">read more</p></button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm"><img src="Images/wheat.svg"><p class="Vision_Mission_text">Wheat</p></div>
+                        <div class="col-sm"><img src="Images/watermelon.svg"><p class="Vision_Mission_text">Confection Watermelon</p></div>
+                        <div class="col-sm"><img src="Images/clover.svg"><p class="Vision_Mission_text">Clover</p></div>
+                        <div class="col-sm"><img src="Images/sunflower.svg"><p class="Vision_Mission_text">Confection Sunflower</p></div>
+                        <div class="col-sm"><img src="Images/tomato.svg"><p class="Vision_Mission_text">Tomato</p></div>
+                        <div class="col-sm"><img src="Images/eggplant.svg"><p class="Vision_Mission_text">Eggplant P/O</p></div>
+                        <div class="col-sm"><img src="Images/ornament_sunflower.svg"><p class="Vision_Mission_text">Ornamental Sunflower</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="Vision_Mission">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="main_text">
+                                <h2 class="h2Vision_Mission">Vision</h2>
+                                <p class="stars">******</p><br>
+                                <p class="Vision_Mission_text">We believe in long-term growth with an emphasis 
+                                on the potential of emerging markets. We also 
+                                support the global need of feeding the growing 
+                                population.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <img class="Vision_Img" src="Images/vision.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="Mission_play">
+                                <img class="Mission_Img" src="Images/mission.png">
+                                <img class="btn_play" src="Images/btn_play.png">
+                            </button>
+                        </div>
+                        <div class="col-sm">
+                            <div class="main_text">
+                                <h2 class="h2Vision_Mission">Mission</h2>
+                                <p class="stars">******</p><br>
+                                <p class="Vision_Mission_text">Breeding and marketing seeds for advanced field 
+                                crops and vegetable varieties that provide an added 
+                                value to all supply chain partners.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_activ">
+                <h2 class="h2Main_activ">Agridera's main activities</h2>
+                <p class="stars" style="text-align: center;">******</p><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="open_field_crop_seeds">
+                                <img class="open_field_crop_seeds_img" src="Images/open_field_crop_seeds.png">
+                                <div class="open_field_crop_seeds_text">
+                                    <h3 class="h3Main_activ">Open field crop seeds</h3>
+                                    <img src="Images/green_line.svg">
+                                    <p class="Vision_Mission_text">wheat, cotton, legumes,
+                                    <br>hybrid confection sunflower</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="vegetable_seeds">
+                                <img class="vegetable_seeds_img" src="Images/vegetable_seeds.png">
+                                <div class="vegetable_seeds_text">
+                                    <h3 class="h3Main_activ">Vegetable seeds</h3>
+                                    <img src="Images/green_line.svg">
+                                    <p class="Vision_Mission_text">hybrid open field tomatoes,
+                                    <br>eggplant, onion, paprika, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="ornamental_seeds">
+                                <img class="ornamental_seeds_img" src="Images/ornamental_seeds.png">
+                                <div class="ornamental_seeds_text">
+                                    <h3 class="h3Main_activ">Ornamental seeds</h3>
+                                    <img src="Images/green_line.svg">
+                                    <p class="Vision_Mission_text">hybrid cut sunflowers, hybrid
+                                    <br>patio tomatoes, Bells of Irland, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="links">
+                    <a href="" class="footer_link">PROFILE</a> <a href="" class="footer_link">MANAGEMENT</a> <a href="category.html" class="footer_link">PRODUCTS</a> <a href="" class="footer_link">R&D</a> <a href="" class="footer_link">LINKS</a> <a href="" class="footer_link">SITEMAP</a> <a href="contact_us.html" class="footer_link">CONTACT</a>
+                    <div class="footer_icons">
+                        <a href="" class="footer_link_icon"><img src="Images/Ico_in.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_inst.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tube.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_tw.svg"></a> <a href="" class="footer_link_icon"><img src="Images/Ico_fb.svg"></a>
+                    </div>
+                </div>
+                <p class="copyrights">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

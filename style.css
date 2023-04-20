@@ -1,0 +1,730 @@
+@font-face {
+    font-family: Roboto Slab Bold;
+    src: url(Fonts/RobotoSlab-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto Slab;
+    src: url(Fonts/RobotoSlab-Regular.ttf);
+}
+@media screen and (max-width: 1920px){
+
+    /* Homepage */
+
+.header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 10px 20%;
+    z-index: 1;
+}
+.logo{
+    /* position: absolute; */
+    width: 20%;
+}
+.search {
+    float: right;
+}
+.searchField {
+    border: none;
+    border-bottom: 1px solid #324950;
+    background: transparent;
+    size: 25;
+    width: 350px;
+    color: #324950;
+}
+.searchField::placeholder {
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.searchIcon {
+    border: 0;
+    background: transparent;
+    margin-left: -30px;
+}
+.navigation {
+    position: absolute;
+    right: 0;
+    top: 57px;
+    margin-right: 20.2%;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: 0;
+    visibility: hidden;
+}
+.menu img {
+    width: 50px;
+}
+.navigation_link {
+    font-family: Heebo;
+    color: #324950;
+}
+.inform {
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+.inform_link {
+    margin-top: 100px;
+    padding-left: 10%;
+}
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 850px;
+    left: 0px;
+    top: 70px;
+    margin-top: -70px;
+    background-image: url(Images/bg.png);
+    background-size: cover;
+}
+.bannerCenter {
+    height: 183px;
+    margin: 362px auto 0;
+}
+h1 {
+    position: relative;
+
+    font-size: 48px;
+    color: #735440;
+    font: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+}
+.bannerButton {
+    display: block;
+    margin: 20px auto 0;
+    border: 0;
+
+    width: 160px;
+    height: 55px;
+
+    background: #57984C;
+}
+.bannerButtonText {
+    display: inline;
+    font-family: Roboto;
+    font-size: 16px;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.products {
+    margin-top: 750px;
+    height: 130px;
+    background: #FFFFFF;
+}
+.products .Vision_Mission_text {
+    text-align: center;
+    float:inline-end;
+}
+.products img {
+    margin: 0 auto;
+    display: block;
+}
+.main_activ .container {
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 45px;
+    bottom: 42px;
+}
+.Vision_Mission {
+    background-color: #F8F4F4;
+    background-position-y: center;
+    background-image: url(Images/bg_plant.svg);
+    background-size: cover;
+    height: 1098px;
+    padding: 20px 20%;
+}
+.main_text {
+    padding-left: 10%;
+    padding-top: 20%;
+    width: 90%;
+}
+.h2Vision_Mission {
+    position: relative;
+
+    font-size: 54px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.Vision_Mission_text {
+    font-size: 17px;
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.stars {
+    position: relative;
+    top: 25px;
+
+    font-weight: bold;
+    text-align: left;
+    color: #57984C;
+}
+.Vision_Img {
+    width: 100%; /*540*/
+    /* height: 500px; */
+}
+.Mission_Img {
+    width: 100%;
+    /* height: 500px; */
+    /* position: relative; */
+}
+.Mission_play {
+    border: none;
+    width: 100%;
+    /* height: 90px; */
+    background: 0;
+
+    /* position: absolute;
+    left: -5%; */
+}
+.btn_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%; /*90px*/
+    /* height: 90px; */
+}
+.main_activ {
+    background: #EDEDED;
+}
+.open_field_crop_seeds_img {
+    margin-top: 39px;
+    width: 354px;
+}
+.vegetable_seeds_img {
+    margin-top: 14px;
+    width: 232px;
+}
+.ornamental_seeds_img {
+    margin-top: 58px;
+    width: 295px;
+}
+.h2Main_activ {
+    position: relative;
+    padding-top: 70px;
+
+    font-family: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+    color: #324950;
+}
+.h3Main_activ {
+    color: #57984C;
+    font-family: Roboto Slab bold;
+    font-size: 24px; /*16 for list*/
+}
+.open_field_crop_seeds_text {
+    position: relative;
+    top: -56px;
+}
+.vegetable_seeds_text {
+    position: relative;
+}
+.ornamental_seeds_text {
+    position: relative;
+    top: -25px;
+}
+.open_field_crop_seeds {
+    position: relative;
+    top: -127px;
+}
+.vegetable_seeds {
+    position: relative;
+    top: -127px;
+}
+.ornamental_seeds {
+    position: relative;
+    top: -127px;
+}
+.footer {
+    color: #B9B9B9;
+    text-align: center;
+    font-size: 16px;
+}
+.links {
+    color: #FFFFFF;
+    
+    background: #2D3F45;
+    padding: 17px 10%;
+}
+.footer_link {
+    color: #FFFFFF;
+    margin: 0.9%;
+}
+.footer_icons {
+    float: right;
+    width: 20%;
+}
+.footer_link_icon {
+    position: relative;
+    margin-left: 0.9%;
+    height: 31px;
+    width: 31px;
+}
+.copyrights {
+    padding: 11px 0;
+    margin: 0;
+    background: #324950;
+}
+
+    /* Category */
+
+.banner_cat {
+    width: 100%;
+    height: 480px;
+
+    position: relative;
+    /* z-index: 1; */
+}
+.banner_cat img {
+    width: 100%;
+    /* overflow: hidden; */
+}
+.content_cat {
+    position: relative;
+    padding: 10px 20% 268px;
+    width: 100%;
+
+    background: #ffffe2;
+}
+.content_text {
+    position: relative;
+    left: 1%;
+    margin-top: 90px;
+}
+.main_text_cat {
+    margin-top: 8%;
+}
+.program_focus {
+    position: relative;
+    margin-top: 30px;
+
+    background-image: url(Images/red_line.svg);
+    background-repeat: no-repeat;
+    background-size: 4px;
+    padding-left: 3%;
+}
+.segments {
+    position: relative;
+    top: 20px;
+    height: 450px;
+    padding-top: 10px;
+
+    background: #FFFAFA;
+}
+.h3segments {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Roboto Slab;
+    color: #324950;
+
+    background-image: url(Images/gray_line.svg);
+    background-repeat: no-repeat;
+    background-position-y: 70px; /*70? 48*/
+    padding-bottom: 70px;
+    margin-bottom: -70px;
+}
+.segments_text {
+    font-size: 17px;
+    font-family: Roboto Slab;
+    color: #324950;
+    margin-top: 30px;
+    text-align: left;
+}
+.program_focus2 {
+    position: relative;
+    top: 50px;
+    left: 3%;
+    height: content;
+
+    background-image: url(Images/red_line.svg);
+    background-repeat: no-repeat;
+    background-size: 3px;
+    padding-left: 2%;
+    margin-left: -2%;
+}
+.list {
+    position: relative;
+    top: 30px;
+}
+.particular_tomato {
+    margin-top: 60px;
+    width: 100%;
+    height: 321px;
+}
+.particular_tomato_image {
+    overflow:hidden;
+    height: 77%;
+    background: white;
+}
+.particular_tomato_image img {
+    /* width: 100%; */
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+.particular_tomato_text {
+    color: #57984C;
+    font-family: Roboto Slab;
+    font-size: 16px;
+    background-color: #fff;
+    text-align: center;
+
+    padding: 9px;
+}
+.particular_tomato_title {
+    font-size: 20px;
+}
+
+    /* Tomato details */
+
+.main_det {
+    position: relative;
+    padding: 19px 20% 100px;
+
+    background-color: #f5f5f5;
+    background-image: url(Images/bg_tomato.svg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.return_det {
+    background-image: url(Images/green_left_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-y: 50%;
+
+    color: #57984C;
+    font: 14px Roboto Slab;
+
+    padding-left: 3%;
+}
+.content_det {
+    position: relative;
+    left: -2%;
+}
+.caption_det h2 {
+    font-size: 53px;
+}
+.caption_det p {
+    font-size: 53px;
+    color: #57984C;
+}
+.caption_det .stars {
+    font-size: 14px;
+}
+.quality_mark {
+    position: relative;
+    left: 19%;
+    
+    background-image: url(Images/quality_mark.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding-left: 19%;
+    margin-left: -19%;
+}
+.quality_mark_text {
+    color: #CF2333;
+    text-align: left;
+    font: 30px Roboto Slab bold;
+    width: 80%;
+}
+.content_det .row {
+    margin-top: 30px;
+}
+.characteristics {
+    padding-top: 14px;
+}
+.characteristics .h3Main_activ, .characteristics .Vision_Mission_text{
+    text-align: left;
+}
+.characteristics img {
+    float: left;
+}
+.img_det {
+    width: 100%;
+}
+.btn_download {
+    position: relative;
+    top: 15px;
+    left: 58%;
+
+    background-image: url(Images/Ico_add.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 29px 9px;
+
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+    color: #57984C;
+    border: #57984C 2px solid;
+    border-radius: 38px;
+    height: 55px;
+    width: 225px;
+    line-height: 55px;
+
+    padding: 0px 28px 11px 77px; /*0x28x11(8)x77 0x20x6x55*/
+}
+
+    /* Contact us */
+
+.banner_con {
+    /* position: absolute;
+    top: 120px */
+}
+.content_con {
+    /* position: absolute; */
+    width: 100%;
+    /* top: 430px; */
+    padding: 3% 20% 2%;
+
+    background: #f5f5f5;
+}
+td {
+    padding-bottom: 20px;
+}
+td img {
+    width: 50%;
+}
+.form, select {
+    text-align: left;
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.left_col {
+    float: left;
+}
+.right_col {
+    position: relative;
+    left:10%;
+}
+.inputs {
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+}
+fieldset input, .you_are, .form_textarea {
+    background-color: #fff;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+}
+.form_textarea {
+    height: 295px;
+}
+.capcha {
+    width: 37%;
+}
+.btn_submit {
+    width: 38%;
+    color: #fff;
+    background: #57984C;
+    border-radius: 60px;
+}
+.adress {
+    /* position: absolute;
+    top: 1200px; */
+    width: 100%;
+}
+.adress_text {
+    position: relative;
+    margin: 6% auto;
+
+    color: #324950;
+    font-family: Roboto Slab;
+
+    text-align: center;
+}
+.adress_text a {
+    color: #57984C;
+}
+}
+@media screen and (max-width: 1366px){
+
+    /* Homepage */
+    
+.logo{
+    /* position: absolute; */
+    /* width: 15%; */
+    /* height: 61px; */
+}
+.banner {
+    height: 605px;
+}
+.bannerCenter {
+    height: 130px;
+    margin: 258px auto 0;
+}
+h1 {
+    font-size: 34px;
+}
+.products {
+    margin-top: 490px;
+}
+.products .col-sm, .Vision_Mission .col-sm {
+    font-size: 14px;
+
+    top: 32px;
+    bottom: 30px;
+}
+.container {
+    font-size: 14px;
+
+    top: 32px;
+    bottom: 30px;
+}
+.Vision_Mission {
+    height: 781px;
+}
+/* .main_text {
+    top: 76px;
+} */
+.h2Vision_Mission {
+    font-size: 38px;
+}
+.Vision_Mission_text {
+    font-size: 12px;
+}
+.stars {
+    top: 18px;
+}
+.open_field_crop_seeds_img {
+    margin-top: 28px;
+    width: 252px;
+    height: 187px;
+}
+.vegetable_seeds_img {
+    margin-top: 10px;
+    width: 165px;
+    height: 165px;
+}
+.ornamental_seeds_img {
+    margin-top: 41px;
+    width: 210px;
+    height: 152px;
+}
+.h2Main_activ {
+    padding-top: 50px;
+}
+.h3Main_activ {
+    font-size: 17px; /*11 for list*/
+}
+.open_field_crop_seeds_text {
+    top: -40px;
+}
+.ornamental_seeds_text {
+    top: -18px;
+}
+.open_field_crop_seeds {
+    top: -90px;
+}
+.vegetable_seeds {
+    top: -90px;
+}
+.ornamental_seeds {
+    top: -90px;
+}
+
+    /* Category */
+
+.program_focus {
+    left: 1%;
+
+    background-size: 3px;
+}
+.segments {
+    height: 320px;
+}
+.h3segments {
+    font-size: 14px;
+
+    background-position-y: 48px;
+    padding-bottom: 48px;
+    margin-bottom: -48px;
+}
+.segments_text {
+    font-size: 12px;
+    margin-top: 30px;
+}
+.program_focus2 {
+    background-size: 2px;
+}
+.particular_tomato {
+    height: 228px;
+}
+.particular_tomato_text {
+    font-size: 11px;
+
+    padding: 9px;
+}
+.particular_tomato_title {
+    font-size: 14px;
+}
+
+    /* Tomato details */
+
+.main_det {
+    padding: 14px 20% 100px;
+}
+.return_det {
+    background-size: 17px;
+    background-position-y: 4px;
+
+    font-size: 10px;
+
+    padding-left: 28px;
+}
+.content_det {
+    left: -14px;
+}
+.quality_mark {
+    left: 73px;
+    
+    background-size: 57px;
+    padding-left: 73px;
+    margin-left: -73px;
+}
+.quality_mark_text {
+    font-size: 21px;
+}
+.characteristics {
+    padding-top: 10px;
+}
+.btn_download {
+    background-size: 23px;
+    background-position: 21px 6px;
+
+    font-size: 11px;
+    border-width: 1px;
+    border-radius: 27px;
+    height: 40px;
+    width: 160px;
+    line-height: 40px;
+
+    padding: 0px 20px 6px 55px;
+}
+
+/* Contact us */
+/* .banner_con {
+    top: 88px;
+}
+.footer_con {
+    top: 1480px;
+} */
+}

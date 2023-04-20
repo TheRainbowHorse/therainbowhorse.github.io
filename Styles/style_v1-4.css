@@ -1,0 +1,802 @@
+@font-face {
+    font-family: Roboto Slab Bold;
+    src: url(Fonts/RobotoSlab-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto Slab;
+    src: url(Fonts/RobotoSlab-Regular.ttf);
+}
+@media screen and (max-width: 1920px){
+
+    /* Homepage */
+
+.header{
+    position: absolute;
+    width: 1127px;
+    height: 113px;
+    left: 388px;
+    top: 20px;
+    margin-bottom: 22px;
+}
+.logo{
+    position: absolute;
+    width: 226px;
+    height: 113px;
+    mix-blend-mode: darken;
+}
+.search {
+    float: right;
+}
+.searchField {
+    border: none;
+    border-bottom: 1px solid #324950;
+    background: transparent;
+
+    color: #324950;
+    float: right;
+}
+.searchField::placeholder {
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.searchIcon {
+    float: right;
+    position: relative;
+    left: -24px;
+
+    border: 0;
+    background: transparent;
+}
+.navigation {
+    position: absolute;
+    left: 743px; /*743 447*/
+    top: 91px;
+    width: 527px;
+}
+.navigation_link {
+    font-family: Heebo;
+    color: #324950;
+}
+.banner {
+    position: absolute;
+    width: 1903px;
+    height: 850px;
+    left: 0px;
+    top: 0px;
+    background-image: url(Images/bg.png);
+    background-size: cover;
+}
+.bannerCenter {
+    position: absolute;
+    width: 804px;
+    height: 183px;
+    left: 558px;
+    top: 362px;
+}
+h1 {
+    position: relative;
+
+    font-size: 48px;
+    color: #735440;
+    font: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+}
+.bannerButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 31px;
+    gap: 10px;
+    border: 0;
+
+    position: relative;
+    width: 160px;
+    height: 55px;
+    line-height: 45px;
+    left: 322px;
+    top: 60px;
+
+    background: #57984C;
+}
+.bannerButtonText {
+    width: 98px;
+    height: 23px;
+    font-family: Roboto;
+    font-size: 16px;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.products {
+    margin-top: 850px;
+    height: 231px;
+    width: 499;
+    background: #FFFFFF;
+}
+.col {
+    font-size: 20px;
+    text-align: center;
+
+    top: 45px;
+    bottom: 42px;
+}
+.products_links {
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.Vision_Mission {
+    padding-left: 405px;
+    padding-right: 405px;
+    padding-bottom: 100px;
+
+    background-color: #F8F4F4;
+    background-position-y: center;
+    background-image: url(Images/bg_plant.svg);
+    background-size: cover;
+    height: 1098px;
+}
+.main_text {
+    text-align: left;
+    top: 107px;
+
+    position: relative;
+}
+.h2Vision_Mission {
+    position: relative;
+
+    font-size: 54px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.Vision_Mission_text {
+    font-size: 17px;
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.stars {
+    position: relative;
+    top: 25px;
+
+    font-weight: bold;
+    text-align: left;
+    color: #57984C;
+}
+.Vision_Img {
+    width: 540px;
+    height: 500px;
+}
+.Mission_Img {
+    width: 540px;
+    height: 500px;
+    position: relative;
+}
+.Mission_play {
+    border: none;
+    width: 90px;
+    height: 90px;
+    background: 0;
+
+    position: absolute;
+    left: -30px;
+}
+.btn_play {
+    position: absolute;
+    top: 253px;
+    left: 280px;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    height: 90px;
+}
+.main_activ {
+    background: #EDEDED;
+}
+.open_field_crop_seeds_img {
+    margin-top: 39px;
+    width: 354px;
+    height: 261px;
+}
+.vegetable_seeds_img {
+    margin-top: 14px;
+    width: 232px;
+    height: 232px;
+}
+.ornamental_seeds_img {
+    margin-top: 58px;
+    width: 295px;
+    height: 213px;
+}
+.h2Main_activ {
+    position: relative;
+    padding-top: 70px;
+
+    font-family: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+    color: #324950;
+}
+.h3Main_activ {
+    color: #57984C;
+    font-family: Roboto Slab bold;
+    font-size: 24px; /*16 for list*/
+}
+.open_field_crop_seeds_text {
+    position: relative;
+    top: -56px;
+}
+.vegetable_seeds_text {
+    position: relative;
+}
+.ornamental_seeds_text {
+    position: relative;
+    top: -25px;
+}
+.open_field_crop_seeds {
+    position: relative;
+    top: -127px;
+}
+.vegetable_seeds {
+    position: relative;
+    top: -127px;
+}
+.ornamental_seeds {
+    position: relative;
+    top: -127px;
+}
+.footer {
+    color: #B9B9B9;
+    background: #324950;
+    text-align: center;
+    height: 127px;
+    font-size: 16px;
+
+    position: relative;
+}
+.links {
+    color: #FFFFFF;
+    
+    background: #2D3F45;
+    height: 76px;
+    line-height: 76px;
+    padding: 0 405px 0;
+}
+.footer_link {
+    color: #FFFFFF;
+    position: relative;
+    margin: 13.8px;
+    left: 0;
+}
+.footer_link_icon {
+    position: relative;
+    margin-left: 13.8px;
+    left: 174px;
+    height: 31px;
+    width: 31px;
+}
+.copyrights {
+    position: relative;
+    margin: 17px 0 0;
+}
+
+    /* Category */
+
+.banner_cat {
+    width: 1903px;
+    height: 480px;
+
+    position: absolute;
+    top: 171px;
+    z-index: 1;
+}
+.content_cat {
+    position: absolute;
+    top: 582px;
+    padding: 0 385px 1968px;
+    width: 100%;
+
+    background: #FCF0F0;
+}
+.content_text {
+    position: relative;
+    left: 20px;
+}
+.program_focus {
+    position: absolute;
+    top: 562px;
+    left: 30px;
+    height: content;
+
+    background-image: url(Images/red_line.svg);
+    background-repeat: no-repeat;
+    background-size: 4px;
+    padding-left: 31px; /*22*/
+    margin-left: -31px; /*22*/
+}
+.segments {
+    position: absolute;
+    top: 652px;
+    width: 1152px;
+    height: 450px;
+
+    background: #FFFAFA;
+}
+.h3segments {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Roboto Slab;
+    color: #324950;
+
+    background-image: url(Images/gray_line.svg);
+    background-repeat: no-repeat;
+    background-position-y: 70px; /*70? 48*/
+    padding-bottom: 70px;
+    margin-bottom: -70px;
+}
+.segments_text {
+    font-size: 17px;
+    font-family: Roboto Slab;
+    color: #324950;
+    margin-top: 30px;
+    text-align: left;
+}
+.program_focus2 {
+    position: absolute;
+    top: 1161px; /*1034+104? 736+104*/
+    left: 435px;
+    height: content;
+
+    background-image: url(Images/red_line.svg);
+    background-repeat: no-repeat;
+    background-size: 3px;
+    padding-left: 22px;
+    margin-left: -22px;
+    margin-bottom: 20px;
+}
+.list {
+    position: absolute;
+    top: 1182px;
+    left: 400px;
+}
+.particular_tomato {
+    margin-top: 30px;
+    width: 350px;
+    height: 321px;
+}
+.particular_tomato_image {
+    overflow:hidden;
+    height: 77%;
+}
+.particular_tomato_image img {
+    width: 100%;
+}
+.particular_tomato_text {
+    color: #57984C;
+    font-family: Roboto Slab;
+    font-size: 16px;
+    background-color: #fff;
+
+    padding: 9px;
+}
+.footer_cat {
+    position: relative;
+    top: 2935px;
+}
+
+    /* Tomato details */
+
+.main_det {
+    position: relative;
+    top: 159px;
+    padding: 19px 405px 0;
+
+    background-color: #f5f5f5;
+    background-image: url(Images/bg_tomato.svg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    height: 1219px;
+}
+.return_det {
+    background-image: url(Images/green_left_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-y: 6px;
+
+    color: #57984C;
+    font: 14px Roboto Slab;
+
+    padding-left: 39px;
+}
+.content_det {
+    position: relative;
+    left: -20px;
+}
+.caption_det h2 {
+    font-size: 53px;
+}
+.caption_det p {
+    font-size: 53px;
+    color: #57984C;
+}
+.caption_det .stars {
+    font-size: 14px;
+}
+.quality_mark {
+    position: relative;
+    left: 103px;
+    
+    background-image: url(Images/quality_mark.svg);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding-left: 103px;
+    margin-left: -103px;
+}
+.quality_mark_text {
+    color: #CF2333;
+    text-align: left;
+    font: 30px Roboto Slab bold;
+}
+.characteristics {
+    padding-top: 14px;
+}
+.characteristics .h3Main_activ, .characteristics .Vision_Mission_text{
+    text-align: left;
+}
+.characteristics img {
+    float: left;
+}
+.img_det {
+    width: 498px;
+}
+.btn_download {
+    position: relative;
+    top: 30px;
+    left: 278px; /*314+28-77 223+20-55; 278 198*/
+
+    background-image: url(Images/ico_pdf.svg);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 29px 8px; /*29x11(8)*/
+
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+    color: #57984C;
+    border: #57984C 2px solid;
+    border-radius: 38px;
+    height: 55px;
+    width: 225px;
+    line-height: 55px;
+
+    padding: 0px 28px 11px 77px; /*0x28x11(8)x77 0x20x6x55*/
+}
+.footer_det {
+    position: relative;
+    top: 155px; /*155 110; 168+168 168+120*/
+}
+}
+@media screen and (max-width: 1366px){
+
+    /* Homepage */
+
+.header{
+    width: 802px;
+    height: 83px;
+    left: 276px;
+    top: 14px;
+    margin-bottom: 16px;
+}
+.logo{
+    width: 161px;
+    height: 80px;
+}
+.searchIcon {
+    left: -24px;
+}
+.navigation {
+    left: 397px;
+    top: 65px;
+    width: 375px;
+}
+.banner {
+    width: 1351px;
+    height: 605px;
+}
+.bannerCenter {
+    width: 572px;
+    height: 130px;
+    left: 397px;
+    top: 258px;
+}
+h1 {
+    font-size: 34px;
+}
+.bannerButton {
+    padding: 11px 22px;
+
+    width: 121px;
+    height: 38px;
+    line-height: 32px;
+    left: 229px;
+    top: 43px;
+}
+.bannerButtonText {
+    width: 77px;
+    height: 16px;
+    font-size: 13px;
+}
+.products {
+    margin-top: 605px;
+    height: 164px;
+    width: 355;
+}
+.col {
+    font-size: 14px;
+
+    top: 32px;
+    bottom: 30px;
+}
+.Vision_Mission {
+    padding-left: 288px;
+    padding-right: 288px;
+    padding-bottom: 71px;
+
+    height: 781px;
+}
+.main_text {
+    top: 76px;
+}
+.h2Vision_Mission {
+    font-size: 38px;
+}
+.Vision_Mission_text {
+    font-size: 12px;
+}
+.stars {
+    top: 18px;
+}
+.Vision_Img {
+    width: 384px;
+    height: 356px;
+}
+.Mission_Img {
+    width: 384px;
+    height: 356px;
+}
+.Mission_play {
+    width: 64px;
+    height: 64px;
+    /* position: relative;
+    left: 448px; a630 448 r
+    top: 1362px; a1914 1362 r */
+}
+.btn_play {
+    top: 180px;
+    left: 200px;
+    width: 90px;
+    height: 90px;
+}
+.open_field_crop_seeds_img {
+    margin-top: 28px;
+    width: 252px;
+    height: 187px;
+}
+.vegetable_seeds_img {
+    margin-top: 10px;
+    width: 165px;
+    height: 165px;
+}
+.ornamental_seeds_img {
+    margin-top: 41px;
+    width: 210px;
+    height: 152px;
+}
+.h2Main_activ {
+    padding-top: 50px;
+}
+.h3Main_activ {
+    font-size: 17px; /*11 for list*/
+}
+.open_field_crop_seeds_text {
+    top: -40px;
+}
+.ornamental_seeds_text {
+    top: -18px;
+}
+.open_field_crop_seeds {
+    top: -90px;
+}
+.vegetable_seeds {
+    top: -90px;
+}
+.ornamental_seeds {
+    top: -90px;
+}
+.footer {
+    height: 90px;
+    font-size: 11px;
+}
+.links {
+    height: 54px;
+    line-height: 54px;
+    padding: 0 288px 0;
+}
+.footer_link {
+    margin: 9.8px;
+}
+.footer_link_icon {
+    margin-left: 9.8px;
+    left: 100px;
+    height: 22px;
+    width: 22px;
+}
+.copyrights {
+    margin: 15px 0 0;
+}
+
+    /* Category */
+
+.banner_cat {
+    width: 1351px;
+    height: 342px;
+    
+    top: 122px;
+}
+.content_cat {
+    top: 414px;
+    padding: 0 274px 1400px;
+}
+.content_text {
+    left: 14px;
+}
+.program_focus {
+    top: 414px;
+    left: 21px;
+
+    background-size: 3px;
+    padding-left: 22px;
+    margin-left: -22px;
+}
+.segments {
+    top: 481px;
+    width: 820px;
+    height: 320px;
+}
+.h3segments {
+    font-size: 14px;
+
+    background-position-y: 48px;
+    padding-bottom: 48px;
+    margin-bottom: -48px;
+}
+.segments_text {
+    font-size: 12px;
+    margin-top: 30px;
+}
+.program_focus2 {
+    top: 840px;
+    left: 309px;
+
+    background-size: 2px;
+    padding-left: 22px;
+    margin-left: -22px;
+    margin-bottom: 20px;
+}
+.list {
+    top: 833px;
+    left: 272px;
+}
+.particular_tomato {
+    margin-top: 30px;
+    width: 249px;
+    height: 228px;
+}
+.particular_tomato_text {
+    font-size: 11px;
+
+    padding: 9px;
+}
+.footer_cat {
+    top: 2088px;
+}
+
+    /* Tomato details */
+
+.main_det {
+    position: relative;
+    top: 114px; /*140+19 100+14*/
+    padding: 14px 288px 0; /*450 320 405 288*/
+
+    background-color: #f5f5f5;
+    background-image: url(Images/bg_tomato.svg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    height: 867px; /*1057+162*/
+}
+.return_det {
+    background-image: url(Images/green_left_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 17px; /*24*/
+    background-position-y: 4px; /*6*/
+
+    color: #57984C;
+    font: 10px Roboto Slab; /*14*/
+
+    padding-left: 28px; /*39*/
+    /* margin-left: 39px; */
+}
+.content_det {
+    position: relative;
+    left: -14px; /*20*/
+}
+.caption_det h2 {
+    font-size: 37px; /*54*/
+}
+ .caption_det p {
+    font-size: 37px; /*54*/
+    color: #57984C;
+}
+.caption_det .stars {
+    font-size: 14px;
+}
+.quality_mark {
+    position: relative;
+    left: 73px; /*103*/
+    
+    background-image: url(Images/quality_mark.svg);
+    background-repeat: no-repeat;
+    background-size: 57px; /*80*/
+    padding-left: 73px; /*103*/
+    margin-left: -73px; /*103*/
+}
+.quality_mark_text {
+    color: #CF2333;
+    text-align: left;
+    font: 21px Roboto Slab bold; /*30*/
+}
+.characteristics {
+    padding-top: 10px; /*14*/
+}
+.characteristics .h3Main_activ, .characteristics .Vision_Mission_text{
+    text-align: left;
+}
+.characteristics img {
+    float: left;
+}
+.img_det {
+    width: 354px; /*498 354*/
+}
+.btn_download {
+    position: relative;
+    top: 21px; /*30*/
+    left: 198px; /*314+28-77 223+20-55*/
+
+    background-image: url(Images/ico_pdf.svg);
+    background-repeat: no-repeat;
+    background-size: 23px; /*32*/
+    background-position: 21px 6px; /*29x11(8)*/
+
+    font-weight: bold;
+    text-align: left;
+    font-size: 11px; /*17*/
+    color: #57984C;
+    border: #57984C 1px solid; /*2*/
+    border-radius: 27px; /*38*/
+    height: 40px; /*55*/
+    width: 160px; /*225*/
+    line-height: 40px; /*55*/
+
+    padding: 0px 20px 6px 55px; /*0x77x11(8)x28 0x55x6x20*/
+}
+.footer_det {
+    position: relative;
+    top: 110px; /*155 110; 168+168 168+120*/
+}
+}

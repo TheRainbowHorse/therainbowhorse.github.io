@@ -1,0 +1,399 @@
+@media screen and (max-width: 1600px){
+
+    /* Homepage */
+
+.Vision_Mission{
+    height: 898px;
+}
+
+    /* Category */
+
+.banner_cat {
+    height: 380px;
+}
+.content_cat {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+/* .list .col-sm {
+    width: 33%;
+} */
+
+    /* Tomato details */
+
+.caption_det h2, .caption_det p {
+    font-size: 37px;
+}
+}
+@media screen and (max-width: 1480px){
+
+    /* Homepage */
+
+.Vision_Mission{
+    height: 848px;
+}
+
+    /* Category */
+
+    /* Tomato details */
+
+.caption_det h2, .caption_det p {
+    font-size: 32px;
+}
+}
+@media screen and (max-width: 1280px){
+
+    /* Homepage */
+
+.Vision_Mission{
+    height: 748px;
+}
+
+    /* Category */
+
+    /* Tomato details */
+
+}
+@media screen and (max-width: 1024px){
+
+    /* Homepage */
+
+.logo {
+    position: relative;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.search {
+    position: relative;
+    top: 30px;
+    left: -20%;
+}
+.menu {
+    visibility: visible;
+    top: 30px;
+    right: 10%;
+    background-color: transparent;
+}
+.navigation {
+    visibility: hidden;
+}
+.bannerCenter {
+    margin-top: 358px;
+}
+.products {
+    margin-top: 290px;
+}
+.Vision_Mission{
+    height: 648px;
+}
+.footer_icons {
+    float: none;
+    width: auto;
+}
+
+    /* Category */
+
+.header {
+    padding-bottom: 100px;
+}
+.content_cat {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+    /* Tomato details */
+
+.main_det {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.content_det {
+    left: 0;
+}
+.btn_download {
+    margin-right: 200px;
+}
+.content_det .row {
+    margin-top: auto;
+}
+
+    /* Contact us */
+
+.left_col {
+    float: none;
+}
+.right_col {
+    left: 0;
+}
+.btn_submit {
+    width: 100%;
+}
+}
+@media screen and (max-width: 768px){
+
+    /* Homepage */
+
+.search {
+    left: -11%;
+}
+.products {
+    margin-top: 340px;
+}
+.Vision_Mission {
+    padding: 20px 5%;
+}
+
+    /* Category */
+
+.content_cat {
+    padding-bottom: 100px;
+}
+.program_focus {
+    background-size: 4.4px;
+}
+.segments {
+    height: 400px;
+}
+.particular_tomato {
+    height: 168px;
+}
+/* .particular_tomato .col-sm{
+    width: 50%;
+} */
+
+    /* Tomato details */
+
+#logo_768 {
+    order: 1;
+}
+#title_768 {
+    order: 2;
+    margin-top: 50px;
+}
+.btn_download {
+    left: 30%;
+}
+
+    /* Contact us */
+
+td img {
+    width: 49px;
+}
+}
+@media screen and (max-width: 640px){
+
+    /* Homepage */
+
+.search {
+    left: 0;
+}
+.products {
+    margin-top: 360px;
+    padding-bottom: 38%;
+}
+.list .col-sm-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+    /* Category */
+
+.segments {
+    height: 500px;
+}
+.program_focus2 {
+    background-size: 2.9px;
+}
+.particular_tomato {
+    height: 118px;
+}
+.list .col-sm-4 {
+    padding-bottom: 100px;
+}
+.particular_tomato_image {
+    height: 130%;
+}
+
+    /* Particular tomato */
+
+.main_det {
+    padding-bottom: 50px;
+}
+}
+@media screen and (max-width: 480px){
+
+    /* Homepage */
+
+.menu {
+    top: 15px;
+}
+.menu img {
+    width: 40px;
+}
+.search {
+    top: 55px;
+    left: 11%;
+}
+.products {
+    margin-top: 390px;
+    /* padding-bottom: 190%; */
+}
+.products img {
+    /* height: 80%; */
+}
+.products .col-sm {
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.products .Vision_Mission_text {
+    /* font-size: 16px; */
+}
+.Vision_Mission {
+    margin-top: 80px;
+}
+.main_text {
+    padding-top: 0;
+}
+.main_activ {
+    margin-top: 115%;
+}
+.open_field_crop_seeds_img {
+    width: 85%;
+    height: 100%;
+    margin-top: 0;
+}
+.vegetable_seeds_img {
+    width: 55%;
+    height: 100%;
+    margin-top: -110px;
+}
+.ornamental_seeds_img {
+    width: 55%;
+    height: 100%;
+    margin-top: 0;
+}
+
+    /* Category */
+
+.search {
+    top: 30px;
+    margin-right: 50px;
+}
+.searchField {
+    width: 230px;
+}
+.banner_cat {
+    height: auto;
+}
+.program_focus {
+    background-size: 5.9px;
+}
+.segments {
+    height: 620px;
+}
+.list .col-sm-4 {
+    padding-bottom: 170px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.particular_tomato_image {
+    height: 200%;
+}
+
+    /* Tomato details */
+
+.btn_download {
+    left: 20%;
+}
+.quality_mark {
+    left: 45px;
+}
+}
+@media screen and (max-width: 400px){
+
+    /* Homepage */
+
+.products {
+    margin-top: 400px;
+}
+.Vision_Mission {
+    margin-top: 90px;
+}
+
+    /* Category */
+
+.search {
+    top: 30px;
+    margin-right: 3px;
+}
+.program_focus {
+    background-size: 7.4px;
+}
+.segments {
+    height: 710px;
+}
+.list .col-sm-4 {
+    padding-bottom: 120px;
+}
+.particular_tomato_image {
+    height: 160%;
+}
+
+    /* Tomato details */
+
+.btn_download {
+    left: 10%;
+}
+}
+@media screen and (max-width: 320px){
+
+    /* Homepage */
+
+.menu {
+    top: 0;
+}
+.bannerCenter {
+    margin-top: 328px;
+}
+.products {
+    margin-top: 420px;
+    padding-bottom: 160px;
+}
+.products .col-sm {
+    width: 33%;
+}
+.Vision_Mission {
+    margin-top: 210px;
+}
+
+    /* Category */
+
+.search {
+    margin-right: 7px;
+}
+.searchField {
+    width: 180px;
+}
+.segments {
+    height: 850px;
+}
+.program_focus2 {
+    background-size: 4.4px;
+}
+.list .col-sm-4 {
+    padding-bottom: 50px;
+}
+.particular_tomato_image {
+    height: 100%;
+}
+
+    /* Tomato details */
+
+.btn_download {
+    left: 0;
+}
+}

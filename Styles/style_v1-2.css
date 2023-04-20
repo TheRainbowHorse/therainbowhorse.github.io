@@ -1,0 +1,532 @@
+@font-face {
+    font-family: Roboto Slab Bold;
+    src: url(Fonts/RobotoSlab-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto Slab;
+    src: url(Fonts/RobotoSlab-Regular.ttf);
+}
+@media screen and (max-width: 1920px){
+.header{
+    position: absolute;
+    width: 1127px;
+    height: 113px;
+    left: 388px;
+    top: 20px;
+}
+.logo{
+    position: absolute;
+    width: 226px;
+    height: 113px;
+    mix-blend-mode: darken;
+}
+.search {
+    float: right;
+}
+.searchField {
+    border: none;
+    border-bottom: 1px solid #324950;
+    background: transparent;
+
+    color: #324950;
+    float: right;
+}
+.searchField::placeholder {
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.searchIcon {
+    float: right;
+
+    position: relative;
+    left: -25px;
+}
+.navigation {
+    position: absolute;
+    left: 628px;
+    top: 91px;
+    width: 527px;
+}
+.navigation_link {
+    font-family: Heebo;
+    color: #324950;
+}
+.banner {
+    position: absolute;
+    width: 1920px;
+    height: 850px;
+    left: 0px;
+    top: 0px;
+    background-image: url(Images/bg.png);
+    background-size: cover;
+}
+.bannerCenter {
+    position: absolute;
+    width: 804px;
+    height: 183px;
+    left: 558px;
+    top: 362px;
+}
+h1 {
+    position: relative;
+
+    font-size: 48px;
+    color: #735440;
+    font: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+}
+.bannerButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 31px;
+    gap: 10px;
+    border: 0;
+
+    position: relative;
+    width: 160px;
+    height: 55px;
+    line-height: 45px;
+    left: 322px;
+    top: 60px;
+
+    background: #57984C;
+}
+.bannerButtonText {
+    width: 98px;
+    height: 23px;
+    font-family: Roboto;
+    font-size: 16px;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.products {
+    margin-top: 850px;
+    height: 231px;
+    width: 499;
+    background: #FFFFFF;
+}
+.col {
+    font-size: 20px;
+    text-align: center;
+
+    top: 45px;
+    bottom: 42px;
+}
+.products_links {
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.Vision_Mission {
+    padding-left: 405px;
+    padding-right: 405px;
+    padding-bottom: 100px;
+
+    background-color: #F8F4F4;
+    background-position-y: center;
+    background-image: url(Images/bg_plant.svg);
+    background-size: cover;
+    height: 1098px;
+}
+.main_text {
+    text-align: left;
+    top: 107px;
+
+    position: relative;
+}
+.h2Vision_Mission {
+    position: relative;
+
+    font-weight: bold;
+    text-align: left;
+}
+.stars {
+    position: relative;
+    top: 25px;
+
+    font-weight: bold;
+    text-align: left;
+    color: #57984C;
+}
+.Vision_Img {
+    width: 540px;
+    height: 500px;
+}
+.Mission_Img {
+    width: 540px;
+    height: 500px;
+    position: relative;
+}
+.Mission_play {
+    border: none;
+    width: 90px;
+    height: 90px;
+    background: 0;
+
+    position: absolute;
+    left: -30px;
+}
+.btn_play {
+    position: absolute;
+    top: 253px;
+    left: 280px;
+    transform: translate(-50%,-50%);
+    width: 90px;
+    height: 90px;
+}
+.main_activ {
+    background: #EDEDED;
+}
+.open_field_crop_seeds_img {
+    margin-top: 39px;
+    width: 354px;
+    height: 261px;
+}
+.vegetable_seeds_img {
+    margin-top: 14px;
+    width: 232px;
+    height: 232px;
+}
+.ornamental_seeds_img {
+    margin-top: 58px;
+    width: 295px;
+    height: 213px;
+}
+.h2Main_activ {
+    position: relative;
+    padding-top: 70px;
+
+    font-family: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+    color: #324950;
+}
+.h3Main_activ {
+    color: #57984C;
+}
+.open_field_crop_seeds_text {
+    position: relative;
+    top: -56px;
+}
+.vegetable_seeds_text {
+    position: relative;
+}
+.ornamental_seeds_text {
+    position: relative;
+    top: -25px;
+}
+.open_field_crop_seeds {
+    position: relative;
+    top: -127px;
+}
+.vegetable_seeds {
+    position: relative;
+    top: -127px;
+}
+.ornamental_seeds {
+    position: relative;
+    top: -127px;
+}
+.footer {
+    color: #B9B9B9;
+    background: #324950;
+    text-align: center;
+    height: 127px;
+    font-size: 16px;
+}
+.links {
+    color: #FFFFFF;
+    
+    background: #2D3F45;
+    height: 76px;
+    line-height: 76px;
+    padding: 0 405px 0;
+}
+.footer_link {
+    color: #FFFFFF;
+    position: relative;
+    margin: 13.8px;
+    left: 0;
+}
+.footer_link_icon {
+    position: relative;
+    margin-left: 13.8px;
+    left: 174px;
+    height: 31px;
+    width: 31px;
+}
+.copyrights {
+    position: relative;
+    margin: 17px 0 0;
+}
+}
+@media screen and (max-width: 1366px){
+.header{
+    position: absolute;
+    width: 802px; /*1127*/
+    height: 83px; /*113*/
+    left: 276px; /*388*/
+    top: 14px; /*20*/
+}
+.logo{
+    position: absolute;
+    width: 161px; /*226*/
+    height: 80px; /*113*/
+    
+    /* background: url(Images/Logo.png); */
+    /* background-size: cover; */
+    mix-blend-mode: darken;
+}
+.search {
+    float: right;
+}
+.searchField {
+    border: none;
+    border-bottom: 1px solid #324950;
+    background: transparent;
+
+    color: #324950;
+    float: right;
+}
+.searchField::placeholder {
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.searchIcon {
+    float: right;
+
+    position: relative;
+    left: -18px;
+}
+.navigation {
+    position: absolute;
+    left: 447px; /*628*/
+    top: 65px; /*91*/
+    width: 375px; /*499 527 375*/
+}
+.navigation_link {
+    font-family: Heebo;
+    color: #324950;
+}
+.banner {
+    position: absolute;
+    width: 1351px; /*1920*/
+    height: 605px; /*850*/
+    left: 0px;
+    top: 0px;
+    background-image: url(Images/bg.png);
+    background-size: cover;
+}
+.bannerCenter {
+    position: absolute;
+    width: 572px; /*804*/
+    height: 130px; /*183*/
+    left: 397px; /*558*/
+    top: 258px; /*362*/
+}
+h1 {
+    position: relative;
+    /* top: 258px; 362 */
+
+    font-size: 34px; /*48*/
+    color: #735440;
+    font: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+}
+.bannerButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 22px; /*16 31*/
+    gap: 10px;
+    border: 0;
+
+    position: relative;
+    width: 121px; /*160*/
+    height: 38px; /*55*/
+    line-height: 32px; /*45*/
+    left: 229px; /*a880 626 r322*/
+    top: 43px; /*a490 349 r60*/
+
+    background: #57984C;
+}
+.bannerButtonText {
+    width: 77px; /*98*/
+    height: 16px; /*23*/
+    font-family: Roboto;
+    font-size: 13px; /*16*/
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.products {
+    margin-top: 605px; /*850*/
+    height: 164px; /*190+41 135+29*/
+    width: 355; /*499*/
+    background: #FFFFFF; /*#EFEDEB*/
+}
+.col {
+    font-size: 14px; /*20*/
+    text-align: center;
+
+    top: 32px; /*45*/
+    bottom: 30px; /*42*/
+}
+.products_links {
+    font-family: Roboto Slab;
+    color: #324950;
+}
+.Vision_Mission {
+    padding-left: 288px; /*405*/
+    padding-right: 288px; /*405*/
+    padding-bottom: 71px; /*100*/
+
+    background-color: #F8F4F4; /*#E5E5E5 EFEDEB */
+    background-position-y: center;
+    background-image: url(Images/bg_plant.svg);
+    background-size: cover;
+    height: 781px; /*1098*/
+}
+.main_text {
+    text-align: left;
+    top: 76px; /*107*/
+
+    position: relative;
+    /* left: 288px; 405 */
+}
+.h2Vision_Mission {
+    position: relative;
+
+    font-weight: bold;
+    text-align: left;
+}
+.stars {
+    position: relative;
+    top: 18px; /*25*/
+
+    font-weight: bold;
+    text-align: left;
+    color: #57984C;
+}
+.Vision_Img {
+    width: 384px; /*540*/
+    height: 356px; /*500*/
+}
+.Mission_Img {
+    width: 384px; /*540*/
+    height: 356px; /*500*/
+    position: relative;
+}
+.Mission_play {
+    border: none;
+    width: 64px; /*90*/
+    height: 64px; /*90*/
+    background: 0;
+
+    /* float: right; */
+    position: absolute;
+    left: -30px;
+    /* position: relative;
+    left: 448px; a630 448 r
+    top: 1362px; a1914 1362 r */
+}
+.btn_play {
+    position: absolute;
+    top: 180px; /*o205 146 a253*/
+    left: 200px; /*o225 160 a280*/
+    transform: translate(-50%,-50%);
+    width: 90px; /*90*/
+    height: 90px; /*90*/
+}
+.main_activ {
+    background: #EDEDED;
+}
+.open_field_crop_seeds_img {
+    margin-top: 28px; /*39*/
+    width: 252px; /*354*/
+    height: 187px; /*261*/
+}
+.vegetable_seeds_img {
+    margin-top: 10px; /*14*/
+    width: 165px; /*232*/
+    height: 165px; /*232*/
+}
+.ornamental_seeds_img {
+    margin-top: 41px; /*58*/
+    width: 210px; /*295*/
+    height: 152px; /*213*/
+}
+.h2Main_activ {
+    position: relative;
+    padding-top: 50px; /*70*/
+
+    font-family: Roboto Slab;
+    font-weight: bold;
+    text-align: center;
+    color: #324950;
+}
+.h3Main_activ {
+    color: #57984C;
+}
+.open_field_crop_seeds_text {
+    position: relative;
+    top: -40px; /*56*/
+}
+.vegetable_seeds_text {
+    position: relative;
+}
+.ornamental_seeds_text {
+    position: relative;
+    top: -18px; /*25*/
+}
+.open_field_crop_seeds {
+    position: relative;
+    top: -90px; /*127*/
+}
+.vegetable_seeds {
+    position: relative;
+    top: -90px; /*127*/
+}
+.ornamental_seeds {
+    position: relative;
+    top: -90px; /*127*/
+}
+.footer {
+    color: #B9B9B9;
+    background: #324950;
+    text-align: center;
+    height: 90px; /*127*/
+    font-size: 11px; /*16*/
+}
+.links {
+    color: #FFFFFF;
+    
+    background: #2D3F45;
+    height: 54px; /*76*/
+    line-height: 54px; /*76*/
+    padding: 0 288px 0; /*405*/
+}
+.footer_link {
+    color: #FFFFFF;
+    position: relative;
+    margin: 9.8px; /*13.8*/
+    left: 0;
+    /* left: 288px; 405 170 */
+}
+.footer_link_icon {
+    position: relative;
+    margin-left: 9.8px; /*13.8*/
+    left: 100px; /*174 100*/
+    height: 22px; /*31*/
+    width: 22px; /*31*/
+}
+.copyrights {
+    position: relative;
+    margin: 15px 0 0; /*17*/
+}
+}
